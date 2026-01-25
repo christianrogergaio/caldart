@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Configurações de Hardware - AgroTech Monitor</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Fira+Code:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "deep-forest": "#1B4332",
+                        "sage-green": "#74C69D",
+                        "sage-light": "#B7E4C7",
+                        "sage-dark": "#52B788",
+                        "surface-dark": "#0D1B14",
+                        "surface-light": "#F5F7F6",
+                        "off-white": "#FAFAF9",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "mono": ["Fira Code", "monospace"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        .terminal-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .terminal-scroll::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.05);
+        }
+        .terminal-scroll::-webkit-scrollbar-thumb {
+            background: #CBD5E1;
+            border-radius: 4px;
+        }
+        .terminal-scroll::-webkit-scrollbar-thumb:hover {
+            background: #94A3B8;
+        }
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }.neutral-card {
+            background-color: white;
+            border: 1px solid #E5E7EB;box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-surface-light text-slate-800 font-display transition-colors duration-200 selection:bg-sage-green selection:text-white">
+<div class="flex h-screen w-full overflow-hidden">
+<aside class="hidden md:flex w-72 flex-col bg-white border-r border-gray-200 z-20">
+<div class="p-6">
+<div class="flex items-center gap-3 mb-10">
+<div class="relative flex items-center justify-center size-10 rounded-xl bg-sage-green/10 text-sage-green border border-sage-green/20">
+<span class="material-symbols-outlined">eco</span>
+</div>
+<div>
+<h1 class="text-lg font-bold leading-tight text-deep-forest">AgroTech Monitor</h1>
+<p class="text-xs text-slate-500">Neutral Nature System</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-deep-forest transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-sage-green transition-colors">dashboard</span>
+<span class="text-sm font-medium">Dashboard</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-deep-forest transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-sage-green transition-colors">potted_plant</span>
+<span class="text-sm font-medium">Culturas</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl bg-sage-green text-white font-semibold shadow-lg shadow-sage-green/20 transition-colors" href="#">
+<span class="material-symbols-outlined text-[22px] fill-current">memory</span>
+<span class="text-sm">Hardware</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-deep-forest transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-sage-green transition-colors">analytics</span>
+<span class="text-sm font-medium">Análises</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 hover:bg-slate-50 hover:text-deep-forest transition-colors group" href="#">
+<span class="material-symbols-outlined text-[22px] group-hover:text-sage-green transition-colors">settings</span>
+<span class="text-sm font-medium">Configurações</span>
+</a>
+</nav>
+</div>
+<div class="mt-auto p-6 border-t border-gray-100">
+<div class="flex items-center gap-3 p-2 rounded-xl hover:bg-slate-50 transition-colors cursor-pointer">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 border-2 border-sage-green" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAb_dwBiOydYKHIQxzS_kj3zmgIHjKWklNaCB9J1T2hFoss_uKUtzVHFjAmQaABljhoVyBl4xlq0dJFIBj1LnMctBToGspriQEBu2X8etxlSaV12dbUVj2ZQyMGOhOm6RMcYAw6r5RC5EzuuvmT73YpOZ6KMtP1siqJuy0-A57OURB-d8mHknYEsSK2sQV3N_zd8C7CSkXSmDYca-dVS1CeY4fcbKGyG62XhVVSZ0x2hpzvxjFHce85wVgQIf8CHKC9NCfycBYsuJ8");'></div>
+<div class="flex flex-col">
+<p class="text-sm font-semibold text-deep-forest">Eng. Carlos</p>
+<p class="text-xs text-slate-500">Técnico Líder</p>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 flex flex-col h-full overflow-hidden relative bg-surface-light">
+<div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sage-green/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 w-[300px] h-[300px] bg-deep-forest/5 rounded-full blur-3xl pointer-events-none"></div>
+<header class="w-full px-8 py-8 z-10">
+<div class="max-w-7xl mx-auto flex flex-col gap-6">
+<div class="flex items-center gap-2 text-sm font-medium">
+<a class="text-slate-500 hover:text-sage-green transition-colors" href="#">Home</a>
+<span class="text-slate-300">/</span>
+<a class="text-slate-500 hover:text-sage-green transition-colors" href="#">Configurações</a>
+<span class="text-slate-300">/</span>
+<span class="text-deep-forest font-semibold">Hardware</span>
+</div>
+<div class="flex flex-wrap justify-between items-end gap-4">
+<div class="flex flex-col gap-1">
+<h1 class="text-3xl font-bold tracking-tight text-deep-forest">Configurações de Hardware</h1>
+<p class="text-slate-500 max-w-2xl text-base">Gerenciamento de conexão Arduino e calibração de sensores DHT22.</p>
+</div>
+<button class="flex items-center justify-center gap-2 h-11 px-6 bg-white border border-gray-200 text-deep-forest hover:bg-slate-50 hover:border-sage-green/50 font-semibold rounded-xl transition-all shadow-sm active:scale-95 group">
+<span class="material-symbols-outlined text-[20px] text-sage-green group-hover:rotate-180 transition-transform duration-500">refresh</span>
+<span>Atualizar Conexão</span>
+</button>
+</div>
+</div>
+</header>
+<div class="flex-1 overflow-y-auto px-8 pb-8 z-10 custom-scroll">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6">
+<div class="lg:col-span-4 xl:col-span-3 flex flex-col gap-6">
+<div class="neutral-card rounded-2xl p-6">
+<h3 class="text-xs font-bold text-deep-forest uppercase tracking-widest mb-5 border-b border-gray-100 pb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-sm text-sage-green">router</span>
+                                Status do Dispositivo
+                            </h3>
+<div class="flex flex-col gap-4">
+<div class="flex justify-between items-center py-1">
+<span class="text-slate-500 text-sm font-medium">Estado</span>
+<span class="flex items-center gap-2 text-deep-forest text-xs font-bold bg-sage-light/30 border border-sage-green/20 px-3 py-1 rounded-full uppercase tracking-wide">
+<span class="size-2 rounded-full bg-sage-green animate-pulse"></span>
+                                        Online
+                                    </span>
+</div>
+<div class="flex justify-between items-center py-2 border-t border-dashed border-gray-200">
+<span class="text-slate-500 text-sm">IP Local</span>
+<span class="text-slate-700 text-sm font-mono bg-gray-50 px-2 py-0.5 rounded border border-gray-100">192.168.1.45</span>
+</div>
+<div class="flex justify-between items-center py-2 border-t border-dashed border-gray-200">
+<span class="text-slate-500 text-sm">MAC</span>
+<span class="text-slate-700 text-sm font-mono bg-gray-50 px-2 py-0.5 rounded border border-gray-100">DE:AD:BE:EF:22</span>
+</div>
+<div class="flex justify-between items-center py-2 border-t border-dashed border-gray-200">
+<span class="text-slate-500 text-sm">Uptime</span>
+<span class="text-slate-900 text-sm font-medium">4d 12h 30m</span>
+</div>
+<div class="flex justify-between items-center py-2 border-t border-dashed border-gray-200">
+<span class="text-slate-500 text-sm">Firmware</span>
+<span class="text-slate-900 text-sm font-medium">v2.1.0</span>
+</div>
+</div>
+</div>
+<div class="neutral-card rounded-2xl p-1 overflow-hidden h-56 relative group">
+<div class="w-full h-full bg-cover bg-center rounded-xl transition-transform duration-700 group-hover:scale-105" data-alt="Satellite map view of the sensor location in a field" data-location="São Paulo Field 4" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBW6hm1ruTGg5BT64eSKOy40SADSmuTTwLAj3Yo9XE7exj8EJoEHefw_mDCrbppCnRdTQVP4vb89wTrFiSqBgDHMWHHDOnC6ebiCgQwGzy5cHPOnmMorXEQXKYsrJcPSid76JxgWfYK3oyr-kQsYilW1bL8lMwSjqbuS84-R7yND5vFY1msa6RHV2h6iIFW3TC4NT0bGMX46lBpgiZ7GKfPUiVPsKjldMs4U3l_fZT2UVP40Q9rSj1xT-ypjS1OoqzNOCN_YSy337I");'>
+<div class="absolute inset-0 bg-deep-forest/10 group-hover:bg-deep-forest/5 transition-colors"></div>
+<div class="absolute bottom-3 left-3 right-3">
+<div class="bg-white/95 backdrop-blur-sm p-3 rounded-lg flex items-center gap-3 border border-gray-200 shadow-md">
+<span class="material-symbols-outlined text-deep-forest text-base bg-sage-light/30 p-1 rounded-md">my_location</span>
+<div class="flex flex-col">
+<span class="text-[10px] text-slate-500 uppercase tracking-wider">Localização</span>
+<span class="text-xs font-bold text-slate-800">Setor Norte - Sensor 04</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-8 xl:col-span-9 flex flex-col gap-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="neutral-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden group border-l-4 border-l-sage-green">
+<div class="absolute top-0 right-0 p-5 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-sage-green">wifi</span>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Intensidade do Sinal</p>
+<h2 class="text-3xl font-bold text-slate-800 mt-1 tracking-tight">-42 <span class="text-lg font-normal text-slate-400">dBm</span></h2>
+</div>
+<div class="bg-sage-green/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-sage-green">signal_wifi_4_bar</span>
+</div>
+</div>
+<span class="inline-block mt-3 text-xs font-bold text-deep-forest bg-sage-light/30 border border-sage-green/20 px-2.5 py-1 rounded-md">EXCELENTE</span>
+</div>
+<div class="mt-6 w-full bg-gray-100 rounded-full h-2 overflow-hidden">
+<div class="bg-sage-green h-2 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div class="neutral-card rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden group border-l-4 border-l-amber-400">
+<div class="absolute top-0 right-0 p-5 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl text-amber-400">bolt</span>
+</div>
+<div class="relative z-10">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm font-medium text-slate-500">Tensão de Entrada</p>
+<h2 class="text-3xl font-bold text-slate-800 mt-1 tracking-tight">5.02 <span class="text-lg font-normal text-slate-400">V</span></h2>
+</div>
+<div class="bg-amber-50 p-2 rounded-lg">
+<span class="material-symbols-outlined text-amber-400">electric_bolt</span>
+</div>
+</div>
+<span class="inline-block mt-3 text-xs font-bold text-amber-600 bg-amber-50 border border-amber-200 px-2.5 py-1 rounded-md">ESTÁVEL</span>
+</div>
+<div class="mt-6 flex gap-1 h-4 items-end">
+<div class="flex-1 bg-sage-green/20 h-[60%] rounded-sm"></div>
+<div class="flex-1 bg-sage-green/30 h-[70%] rounded-sm"></div>
+<div class="flex-1 bg-sage-green/40 h-[65%] rounded-sm"></div>
+<div class="flex-1 bg-sage-green/50 h-[80%] rounded-sm"></div>
+<div class="flex-1 bg-sage-green/60 h-[75%] rounded-sm"></div>
+<div class="flex-1 bg-sage-green h-[78%] rounded-sm animate-pulse"></div>
+</div>
+</div>
+</div>
+<div class="neutral-card rounded-2xl p-8">
+<div class="flex items-center gap-3 mb-8 border-b border-gray-100 pb-4">
+<div class="p-2 bg-sage-light/20 rounded-lg">
+<span class="material-symbols-outlined text-deep-forest">tune</span>
+</div>
+<div>
+<h3 class="text-lg font-bold text-deep-forest">Calibração e Alertas</h3>
+<p class="text-xs text-slate-500">Ajuste fino dos sensores e notificações</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<div class="space-y-6">
+<label class="block group">
+<span class="text-sm font-semibold text-slate-700 mb-2 block group-hover:text-deep-forest transition-colors">Offset Temperatura (°C)</span>
+<div class="relative">
+<input class="block w-full rounded-xl border-gray-200 bg-slate-50 text-slate-900 shadow-sm focus:border-sage-green focus:ring-sage-green sm:text-sm pl-4 pr-12 py-3 transition-all" step="0.1" type="number" value="0.5"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+<span class="text-slate-400 font-medium sm:text-sm">°C</span>
+</div>
+</div>
+<p class="mt-1 text-[10px] text-slate-400">Compensação para desvio do sensor térmico</p>
+</label>
+<label class="block group">
+<span class="text-sm font-semibold text-slate-700 mb-2 block group-hover:text-deep-forest transition-colors">Offset Umidade (%)</span>
+<div class="relative">
+<input class="block w-full rounded-xl border-gray-200 bg-slate-50 text-slate-900 shadow-sm focus:border-sage-green focus:ring-sage-green sm:text-sm pl-4 pr-12 py-3 transition-all" step="1" type="number" value="-2"/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+<span class="text-slate-400 font-medium sm:text-sm">%</span>
+</div>
+</div>
+<p class="mt-1 text-[10px] text-slate-400">Ajuste de curva para higrômetro</p>
+</label>
+</div>
+<div class="flex flex-col justify-between h-full">
+<div class="space-y-5 pt-1">
+<div class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-gray-100">
+<span class="flex-grow flex flex-col cursor-pointer">
+<span class="text-sm font-semibold text-slate-800">Alertas de Conectividade</span>
+<span class="text-xs text-slate-500">Notificar se o sensor ficar offline</span>
+</span>
+<button aria-checked="true" class="bg-sage-green relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2" role="switch" type="button">
+<span class="translate-x-5 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+<div class="flex items-center justify-between p-3 rounded-xl hover:bg-slate-50 transition-colors border border-transparent hover:border-gray-100">
+<span class="flex-grow flex flex-col cursor-pointer">
+<span class="text-sm font-semibold text-slate-800">Modo de Depuração</span>
+<span class="text-xs text-slate-500">Log detalhado no terminal</span>
+</span>
+<button aria-checked="false" class="bg-gray-200 relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2" role="switch" type="button">
+<span class="translate-x-0 pointer-events-none inline-block h-5 w-5 transform rounded-full bg-white shadow ring-0 transition duration-200 ease-in-out"></span>
+</button>
+</div>
+</div>
+<div class="mt-8 flex justify-end">
+<button class="inline-flex items-center justify-center rounded-xl border border-transparent bg-deep-forest text-white px-6 py-3 text-sm font-bold shadow-lg shadow-deep-forest/10 hover:shadow-xl hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-sage-green focus:ring-offset-2 transition-all transform hover:-translate-y-0.5">
+                                            Aplicar Alterações
+                                        </button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-h-[350px] neutral-card rounded-2xl overflow-hidden shadow-lg relative">
+<div class="flex items-center justify-between px-5 py-3 bg-gray-100/80 border-b border-gray-200 backdrop-blur-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-sm text-slate-500">terminal</span>
+<h3 class="text-xs font-mono font-bold text-slate-600 tracking-wider uppercase">Terminal de Monitoramento</h3>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-[10px] font-mono text-slate-400">Serial Port: COM3 (9600 baud)</span>
+<div class="flex gap-2">
+<span class="size-3 rounded-full bg-gray-300 opacity-80 hover:bg-red-400 transition-colors cursor-pointer"></span>
+<span class="size-3 rounded-full bg-gray-300 opacity-80 hover:bg-amber-400 transition-colors cursor-pointer"></span>
+<span class="size-3 rounded-full bg-gray-300 opacity-80 hover:bg-green-400 transition-colors cursor-pointer"></span>
+</div>
+</div>
+</div>
+<div class="flex-1 p-5 font-mono text-xs overflow-y-auto terminal-scroll bg-gray-50 text-slate-700 leading-relaxed shadow-inner">
+<div class="flex flex-col gap-1.5">
+<div class="text-slate-500">[14:02:10] <span class="text-blue-600 font-bold">INFO</span> System initializing...</div>
+<div class="text-slate-500">[14:02:12] <span class="text-blue-600 font-bold">INFO</span> Connected to WiFi SSID "AgroNet_Secure"</div>
+<div class="text-slate-500">[14:02:13] <span class="text-amber-500 font-bold">WARN</span> NTP sync delay (142ms)</div>
+<div class="text-slate-500">[14:02:13] <span class="text-blue-600 font-bold">INFO</span> Time synchronized.</div>
+<div class="text-slate-500">[14:02:15] <span class="text-emerald-600 font-bold">SUCCESS</span> MQTT Broker connected at 192.168.1.10:1883</div>
+<div class="text-slate-500 my-2 border-t border-dashed border-gray-200 pt-2 flex items-center gap-2">
+<span class="material-symbols-outlined text-[12px] text-purple-500">sensors</span>
+<span>[14:02:16] <span class="text-purple-600 font-bold">SENSOR</span> DHT22 Init OK.</span>
+</div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:20] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.10°C</span> | <span class="text-blue-500">Hum: 60.5%</span> | VCC: 5.01V
+                                    </div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:25] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.12°C</span> | <span class="text-blue-500">Hum: 60.4%</span> | VCC: 5.02V
+                                    </div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:30] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.15°C</span> | <span class="text-blue-500">Hum: 60.2%</span> | VCC: 5.01V
+                                    </div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:35] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.20°C</span> | <span class="text-blue-500">Hum: 60.1%</span> | VCC: 5.02V
+                                    </div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:40] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.22°C</span> | <span class="text-blue-500">Hum: 60.0%</span> | VCC: 5.02V
+                                    </div>
+<div class="text-slate-400 hover:bg-white hover:shadow-sm p-1 rounded -mx-1 transition-all">
+                                        [14:02:45] DATA &gt;&gt; <span class="text-slate-700 font-medium">Temp: 24.25°C</span> | <span class="text-blue-500">Hum: 59.8%</span> | VCC: 5.02V
+                                    </div>
+<div class="text-deep-forest mt-1 flex items-center gap-1 bg-sage-light/30 border border-sage-green/10 p-1.5 rounded -mx-1 animate-pulse">
+<span class="text-slate-500">[14:02:50]</span>
+<span class="font-medium">DATA &gt;&gt; Temp: 24.25°C | Hum: 59.8% | VCC: 5.02V</span>
+<span class="inline-block w-2 h-4 bg-deep-forest blink ml-1 align-middle"></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

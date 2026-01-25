@@ -1,0 +1,26 @@
+[
+    {
+        "data": "2025-06-04",
+        "hora": "23:40:18",
+        "temperatura": 22.5,
+        "umidade": 79.0
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:45:18",
+        "temperatura": 22.6,
+        "umidade": 79.0
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:50:18",
+        "temperatura": 22.6,
+        "umidade": 78.8
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:55:19",
+        "temperatura": 22.7,
+        "umidade": 78.8
+    }
+]

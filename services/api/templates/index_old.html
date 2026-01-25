@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Doenças - Dashboard</title>
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Próprio -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Leaflet (Mapas) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar de Controles -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i>
+                <h2>AgroMonitor</h2>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label><i class="fa-solid fa-seedling"></i> Planta</label>
+                    <select id="sel-planta"></select>
+                </div>
+
+                <div class="control-group">
+                    <label><i class="fa-solid fa-virus"></i> Doença</label>
+                    <select id="sel-doenca"></select>
+                </div>
+
+                <div class="control-group">
+                    <label><i class="fa-solid fa-clock"></i> Estádio Fenológico</label>
+                    <select id="sel-estadio"></select>
+                </div>
+
+                <!-- Botão Atualizar (Secundário) -->
+                <button id="btn-atualizar" class="btn-primary"
+                    style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); color: var(--text-secondary); font-size: 0.85rem; padding: 0.6rem;">
+                    <i class="fa-solid fa-rotate-right"></i> Atualizar
+                </button>
+
+                <div style="height: 20px;"></div>
+
+                <!-- Botão Registrar (Destaque) -->
+                <button id="btn-registrar" class="btn-primary"
+                    style="background: linear-gradient(45deg, #00f260, #0575e6); margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0, 242, 96, 0.2);">
+                    <i class="fa-solid fa-plus-circle"></i> Registrar Aplicação
+                </button>
+
+                <!-- Botão Relatórios -->
+                <a href="/relatorios" class="btn-primary"
+                    style="text-align: center; text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 8px; background: var(--bg-dark); border: 1px solid rgba(255,255,255,0.1); margin-bottom: 0.5rem;">
+                    <i class="fa-solid fa-table-list"></i> Histórico
+                </a>
+
+                <!-- Botão Análise (NOVO) -->
+                <a href="/analise" class="btn-primary"
+                    style="text-align: center; text-decoration: none; display: flex; justify-content: center; align-items: center; gap: 8px; background: var(--accent);">
+                    <i class="fa-solid fa-chart-pie"></i> Análise ROI
+                </a>
+            </div>
+
+            <div class="status-box">
+                <p>Status do Sensor</p>
+                <div class="status-indicator">
+                    <span class="dot pulse"></span> <span id="txt-status">Conectado</span>
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- Área Principal -->
+        <main class="main-content">
+            <header>
+                <h1>Monitoramento em Tempo Real</h1>
+                <p id="last-update">Última atualização: --</p>
+            </header>
+
+            <!-- Cards de KPI -->
+            <div class="kpi-grid">
+                <div class="card kpi-card" id="card-risco">
+                    <div class="icon-bg"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>Risco Atual</h3>
+                    <div class="value" id="val-risco">--</div>
+                    <div class="subtext">Baseado em VDS e Fenologia</div>
+                </div>
+
+                <div class="card kpi-card">
+                    <div class="icon-bg"><i class="fa-solid fa-temperature-half"></i></div>
+                    <h3>Temperatura</h3>
+                    <div class="value"><span id="val-temp">--</span>°C</div>
+                </div>
+
+                <div class="card kpi-card">
+                    <div class="icon-bg"><i class="fa-solid fa-droplet"></i></div>
+                    <h3>Umidade</h3>
+                    <div class="value"><span id="val-umid">--</span>%</div>
+                </div>
+
+                <div class="card kpi-card">
+                    <div class="icon-bg"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3>VDS Diário</h3>
+                    <div class="value" id="val-vds">--</div>
+                </div>
+
+                <div class="card kpi-card" id="card-previsao">
+                    <div class="icon-bg"><i class="fa-solid fa-cloud-sun"></i></div>
+                    <h3>Previsão (24h)</h3>
+                    <div class="value" id="val-risco-futuro">--</div>
+                    <div class="subtext">Risco estimado amanhã</div>
+                </div>
+
+                <!-- CARD CICLO DA SAFRA (GDD) -->
+                <div class="card kpi-card" id="card-ciclo" style="border-color: rgba(255,255,255,0.1); display: none;">
+                    <!-- Hidden until Soja is selected -->
+                    <div class="icon-bg"><i class="fa-solid fa-spinner"></i></div>
+
+                    <div style="display: flex; justify-content: space-between; align-items: start; width: 100%;">
+                        <h3>Ciclo (GDD)</h3>
+                        <button id="btn-config-ciclo" class="btn-icon-small" title="Configurar Safra"><i
+                                class="fa-solid fa-gear"></i></button>
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px;">
+                        <div class="circular-progress" style="position: relative; width: 80px; height: 80px;">
+                            <svg viewBox="0 0 36 36" class="circular-chart" style="width: 100%; height: 100%;">
+                                <path class="circle-bg"
+                                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    style="fill: none; stroke: #eee; stroke-width: 3.8; opacity: 0.1;" />
+                                <path class="circle" id="progress-circle" stroke-dasharray="0, 100"
+                                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    style="fill: none; stroke: #00f260; stroke-width: 3.8; stroke-linecap: round; transition: stroke-dasharray 0.6s ease;" />
+                            </svg>
+                            <div class="percentage"
+                                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-weight: bold; font-size: 1.1rem;"
+                                id="txt-progresso">0%</div>
+                        </div>
+                        <div style="text-align: right;">
+                            <div class="value" style="font-size: 1.4rem;" id="val-gdd-acumulado">0</div>
+                            <div class="subtext">GDD Acumulado</div>
+                            <div class="subtext" style="font-size: 0.8rem; opacity: 0.7;">Meta: <span
+                                    id="val-gdd-meta">--</span></div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="margin-top: 10px; background: rgba(255,255,255,0.05); padding: 5px 10px; border-radius: 6px; font-size: 0.9rem;">
+                        <i class="fa-solid fa-calendar-day"></i> Previsão: <strong id="txt-previsao-data"
+                            style="color: #00f260;">--/--</strong>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gráfico e Mapa -->
+            <div class="dashboard-grid-bottom" style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem;">
+                <div class="card chart-container">
+                    <h3><i class="fa-solid fa-chart-area"></i> Histórico Recente</h3>
+                    <canvas id="mainChart"></canvas>
+                </div>
+                <div class="card map-container">
+                    <h3><i class="fa-solid fa-location-dot"></i> Localização do Sensor</h3>
+                    <div id="map" style="height: 100%; min-height: 300px; border-radius: 12px; margin-top: 10px;"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS Próprio -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <!-- Modal de Registro -->
+    <div id="modal-registro" class="modal-overlay" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-clipboard-list"></i> Diário de Campo</h3>
+                <button id="btn-fechar-modal" class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                    <label>Tipo de Ação</label>
+                    <select id="reg-tipo">
+                        <option value="Fungicida">Aplicação de Fungicida</option>
+                        <option value="Adubação">Adubação Foliar</option>
+                        <option value="Poda">Poda de Limpeza</option>
+                        <option value="Irrigação">Irrigação Controlada</option>
+                    </select>
+                </div>
+                <div class="control-group">
+                    <label>Produto Utilizado</label>
+                    <input type="text" id="reg-produto" placeholder="Ex: Cobre, Enxofre..."
+                        style="width: 100%; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); color: #fff; border-radius: 12px; outline: none;">
+                </div>
+                <div class="control-group">
+                    <label>Observações</label>
+                    <textarea id="reg-obs" rows="3" placeholder="Detalhes da aplicação..."
+                        style="width: 100%; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); color: #fff; border-radius: 12px; outline: none; resize: vertical;"></textarea>
+                </div>
+                <button id="btn-salvar-registro" class="btn-primary">
+                    <i class="fa-solid fa-save"></i> Salvar Registro
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuração do Ciclo -->
+    <div id="modal-config-ciclo" class="modal-overlay" style="display: none;">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-gear"></i> Configurar Safra (Soja)</h3>
+                <button id="btn-fechar-config" class="btn-close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="control-group">
+                    <label>Data de Plantio</label>
+                    <input type="date" id="cfg-data-plantio"
+                        style="width: 100%; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); color: #fff; border-radius: 12px; outline: none;">
+                </div>
+                <div class="control-group">
+                    <label>Meta GDD da Cultivar</label>
+                    <input type="number" id="cfg-meta-gdd" placeholder="Ex: 1200" value="1200"
+                        style="width: 100%; padding: 1rem; background: var(--glass-bg); border: 1px solid var(--glass-border); color: #fff; border-radius: 12px; outline: none;">
+                    <small style="color: #888;">Consulte a ficha técnica da semente.</small>
+                </div>
+                <button id="btn-salvar-config" class="btn-primary">
+                    <i class="fa-solid fa-check"></i> Salvar Configuração
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Estilo Inline Rápido para o Modal (Idealmente iria no CSS) -->
+    <style>
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.3s;
+        }
+
+        .modal-card {
+            background: var(--bg-card);
+            width: 90%;
+            max-width: 500px;
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.3s;
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-close {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</body>
+
+</html>

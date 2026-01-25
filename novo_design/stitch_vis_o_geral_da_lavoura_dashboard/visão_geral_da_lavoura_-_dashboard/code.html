@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Visão Geral - Neutra Profissional</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "forest-base": "#333333", // Remapped to Dark Gray for typography
+                        "forest-deep": "#1f1f1f",
+                        "forest-light": "#8DC6A5",
+                        "sage": "#8DC6A5",        // Requested Sage Green
+                        "sage-light": "#E8F5EB",
+                        "sage-dark": "#76A88D",   // Slightly darker for borders/text
+                        "off-white": "#F8F9FA",   // Requested Background
+                        "coral": "#E76F51",
+                        "amber": "#E9C46A",
+                        "gray-border": "#E5E7EB", // Subtle border
+                    },
+                    fontFamily: {
+                        "sans": ["Inter", "sans-serif"]
+                    },
+                    backgroundImage: {
+                        'farm-aerial': "url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6T5DSbPmT0D6YEZazyYwsh0n8zad7O7CCkdGvYOLM7AXMfXUI1uG7zZf9bmsPt6_laK324H5nTNSlfvYNGfX2nAxBirCzR088wrfR5ri32xB7o_mbnZjGi7NJXW_k1jbLISqUnmyNxD5B1NGAy4Bnfq0eZMr_CfCuy4fzYyval9adLp-efiptrpe1pCsu1XtfcmoOod-6h8m9z-X5eCjNO-3Y4d_WThaLd4iKdLhM8wIlWfBvNiqPYlH7_z3k4r7tst1qTB8p4zc')",
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 10px -2px rgba(0, 0, 0, 0.03)',
+                        'glass': 'none', 
+                        'card': '0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05)'
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }.glass-panel, .glass-panel-dark {
+            background: #FFFFFF;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+            border: 1px solid #E5E7EB;box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            color: #333333;
+        }.glass-panel-dark h3, 
+        .glass-panel-dark span, 
+        .glass-panel-dark p,
+        .glass-panel-dark div {}
+        .glass-panel-accent {
+            background: #F8F9FA;
+            border: 1px solid #E5E7EB;
+        }
+        body {
+            background-color: #F8F9FA;
+            color: #333333;
+        }::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #D1D5DB; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #9CA3AF; 
+        }
+    </style>
+</head>
+<body class="bg-off-white text-forest-base min-h-screen relative overflow-x-hidden selection:bg-sage selection:text-white font-sans antialiased">
+<div class="fixed inset-0 z-0 pointer-events-none bg-off-white"></div>
+<div class="layout-container flex h-full grow flex-col relative z-10">
+<header class="flex items-center justify-between whitespace-nowrap bg-white border-b border-gray-border px-8 py-4 sticky top-0 z-50 transition-all duration-300">
+<div class="flex items-center gap-10">
+<div class="flex items-center gap-3 text-forest-base">
+<div class="size-10 flex items-center justify-center bg-sage text-white rounded-xl shadow-sm">
+<span class="material-symbols-outlined">spa</span>
+</div>
+<div>
+<h2 class="text-forest-base text-xl font-bold leading-tight tracking-tight">AgroWatch</h2>
+<span class="text-[10px] uppercase tracking-[0.2em] text-sage-dark font-semibold">Profissional</span>
+</div>
+</div>
+<label class="hidden md:flex flex-col min-w-64 h-11 group">
+<div class="flex w-full flex-1 items-center rounded-xl bg-off-white border border-gray-border px-4 group-focus-within:bg-white group-focus-within:border-sage transition-all duration-300">
+<span class="material-symbols-outlined text-gray-400 mr-3">search</span>
+<input class="w-full bg-transparent border-none text-forest-base placeholder:text-gray-400 focus:outline-none focus:ring-0 text-sm font-medium h-full" placeholder="Buscar talhão, sensor..." value=""/>
+</div>
+</label>
+</div>
+<div class="flex flex-1 justify-end gap-10 items-center">
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-forest-base text-sm font-semibold leading-normal relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 after:bg-sage after:rounded-full" href="#">Dashboard</a>
+<a class="text-gray-500 text-sm font-medium leading-normal hover:text-forest-base transition-colors" href="#">Relatórios</a>
+<a class="text-gray-500 text-sm font-medium leading-normal hover:text-forest-base transition-colors" href="#">Sensores</a>
+<a class="text-gray-500 text-sm font-medium leading-normal hover:text-forest-base transition-colors" href="#">Configurações</a>
+</nav>
+<div class="flex gap-3 items-center border-l border-gray-200 pl-6">
+<button class="relative flex size-10 cursor-pointer items-center justify-center rounded-full hover:bg-gray-100 text-gray-500 transition-all">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-2.5 right-2.5 size-2 rounded-full bg-coral border border-white"></span>
+</button>
+<div class="flex items-center gap-3 pl-2">
+<div class="bg-center bg-no-repeat bg-cover rounded-full size-10 ring-2 ring-gray-100" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDir0NQChZTCbA74-tcS-1a9N01GF_ivIi0GuWkxvrSoyKsUNb7ry4z-5RqmJo6TOhzN-Zz8GxEJIqCGVbiAYCX1xMetnLPj5OCTxxuAQnzRUEkHW2PFeg-kYYXc4FC68FhllrxUOZGNYhOvRamOJGrqDbhsyN9IOzzao0PWbI8Eu0ulJk140pb5RypLaJzmI1jHohdWUhLV5oDjRwFPv2d9aTRF8ms5a-7ahMaWsqKAsAADJcZ4vyfHfRJb1VYsjg69w6Gm_iLeOE");'></div>
+<div class="hidden xl:block">
+<p class="text-sm font-bold text-forest-base">Roberto Silva</p>
+<p class="text-xs text-gray-400">Gerente Agrícola</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col p-8 max-w-[1600px] mx-auto w-full gap-8">
+<div class="flex flex-wrap justify-between items-end gap-4 animate-[fadeIn_0.5s_ease-out]">
+<div class="flex flex-col gap-1">
+<h1 class="text-forest-base text-3xl font-bold tracking-tight">Visão Geral da <span class="text-sage">Lavoura</span></h1>
+<p class="text-gray-500 text-sm font-medium">Monitoramento em tempo real e análise preditiva.</p>
+</div>
+<div class="flex gap-3">
+<button class="flex items-center justify-center rounded-xl h-10 px-5 bg-white text-forest-base text-sm font-semibold border border-gray-200 hover:bg-gray-50 transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px] mr-2">filter_list</span>
+                    Filtros
+                </button>
+<button class="flex items-center justify-center rounded-xl h-10 px-5 bg-sage text-white text-sm font-semibold shadow-sm hover:bg-sage-dark transition-all transform hover:-translate-y-0.5">
+<span class="material-symbols-outlined text-[20px] mr-2">download</span>
+                    Relatório Completo
+                </button>
+</div>
+</div>
+<div class="flex flex-col xl:flex-row gap-6">
+<div class="flex-1 flex flex-col gap-6 min-h-[500px]">
+<div class="bg-white rounded-3xl overflow-hidden h-full min-h-[500px] w-full relative shadow-card border border-gray-200 group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-[1.01]" data-location="Mato Grosso farm" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD6T5DSbPmT0D6YEZazyYwsh0n8zad7O7CCkdGvYOLM7AXMfXUI1uG7zZf9bmsPt6_laK324H5nTNSlfvYNGfX2nAxBirCzR088wrfR5ri32xB7o_mbnZjGi7NJXW_k1jbLISqUnmyNxD5B1NGAy4Bnfq0eZMr_CfCuy4fzYyval9adLp-efiptrpe1pCsu1XtfcmoOod-6h8m9z-X5eCjNO-3Y4d_WThaLd4iKdLhM8wIlWfBvNiqPYlH7_z3k4r7tst1qTB8p4zc");'>
+<div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+</div>
+<div class="absolute top-6 left-6 z-10 w-64">
+<div class="bg-white p-4 rounded-2xl shadow-md border border-gray-100">
+<p class="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-3">Índice de Risco</p>
+<div class="space-y-3">
+<div class="flex items-center gap-3">
+<div class="h-2.5 w-2.5 rounded-full bg-coral ring-2 ring-coral/20"></div>
+<span class="text-xs font-semibold text-forest-base">Crítico (Ação Imediata)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-2.5 w-2.5 rounded-full bg-amber ring-2 ring-amber/20"></div>
+<span class="text-xs font-semibold text-forest-base">Alerta (Monitorar)</span>
+</div>
+<div class="flex items-center gap-3">
+<div class="h-2.5 w-2.5 rounded-full bg-sage ring-2 ring-sage/20"></div>
+<span class="text-xs font-semibold text-forest-base">Normal (Estável)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute top-6 right-6 flex flex-col gap-3">
+<button class="size-10 flex items-center justify-center rounded-xl bg-white text-forest-base hover:bg-off-white transition-all shadow-md border border-gray-200">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</button>
+<div class="flex flex-col bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden">
+<button class="size-10 flex items-center justify-center border-b border-gray-100 text-forest-base hover:bg-off-white">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+<button class="size-10 flex items-center justify-center text-forest-base hover:bg-off-white">
+<span class="material-symbols-outlined text-[20px]">remove</span>
+</button>
+</div>
+</div>
+<div class="absolute bottom-6 right-6">
+<button class="size-12 flex items-center justify-center rounded-xl bg-sage text-white shadow-lg hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</div>
+<div class="w-full xl:w-[400px] flex flex-col gap-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-5 rounded-2xl flex flex-col gap-2 relative overflow-hidden shadow-card border border-gray-200 group hover:border-sage/30 transition-colors">
+<div class="absolute -right-6 -top-6 bg-sage/10 size-24 rounded-full group-hover:scale-110 transition-transform duration-500"></div>
+<div class="flex justify-between items-start z-10">
+<span class="text-gray-400 text-xs font-bold uppercase tracking-wider">Área Total</span>
+<span class="material-symbols-outlined text-sage text-xl">straighten</span>
+</div>
+<div class="mt-2 z-10">
+<p class="text-forest-base text-3xl font-bold">1.240</p>
+<span class="text-xs font-medium text-gray-400">hectares monitorados</span>
+</div>
+</div>
+<div class="bg-white p-5 rounded-2xl flex flex-col gap-2 relative overflow-hidden shadow-card border border-gray-200 group">
+<div class="absolute -right-6 -top-6 bg-coral/5 size-24 rounded-full group-hover:scale-110 transition-transform duration-500"></div>
+<div class="flex justify-between items-start z-10">
+<span class="text-coral text-xs font-bold uppercase tracking-wider">Alertas</span>
+<span class="material-symbols-outlined text-coral animate-pulse text-xl">warning</span>
+</div>
+<div class="mt-2 z-10">
+<p class="text-forest-base text-3xl font-bold">05</p>
+<span class="text-xs font-medium text-gray-400">Riscos Críticos</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-2xl p-6 relative overflow-hidden shadow-card border border-gray-200">
+<div class="absolute top-0 right-0 w-32 h-32 bg-sage/10 rounded-full blur-[40px] pointer-events-none"></div>
+<div class="flex justify-between items-center mb-6 relative z-10">
+<h3 class="text-forest-base font-semibold flex items-center gap-2 text-sm uppercase tracking-wide">
+<span class="material-symbols-outlined text-sage">partly_cloudy_day</span>
+                            Previsão
+                        </h3>
+<span class="text-[10px] font-bold text-sage-dark bg-sage-light px-2 py-1 rounded-md border border-sage/20">HOJE</span>
+</div>
+<div class="flex items-center justify-between mb-8 relative z-10">
+<div>
+<div class="flex items-start">
+<span class="text-5xl font-light text-forest-base tracking-tighter">28</span>
+<span class="text-sage text-2xl mt-1 font-medium">°C</span>
+</div>
+<div class="text-sm text-gray-500 mt-1 font-medium">Parcialmente Nublado</div>
+</div>
+<div class="flex flex-col gap-2 text-right">
+<div class="text-xs text-gray-500 flex items-center justify-end gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-sage">water_drop</span> 65% UR
+                            </div>
+<div class="text-xs text-gray-500 flex items-center justify-end gap-1.5 font-medium">
+<span class="material-symbols-outlined text-[16px] text-sage">air</span> 12km/h SE
+                            </div>
+</div>
+</div>
+<div class="grid grid-cols-4 gap-2 border-t border-gray-100 pt-4 relative z-10">
+<div class="flex flex-col items-center gap-1.5">
+<span class="text-[10px] uppercase text-gray-400 font-bold">Seg</span>
+<span class="material-symbols-outlined text-amber text-xl">sunny</span>
+<span class="text-sm font-semibold text-forest-base">29°</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="text-[10px] uppercase text-gray-400 font-bold">Ter</span>
+<span class="material-symbols-outlined text-gray-400 text-xl">cloud</span>
+<span class="text-sm font-semibold text-forest-base">26°</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="text-[10px] uppercase text-gray-400 font-bold">Qua</span>
+<span class="material-symbols-outlined text-sky-300 text-xl">rainy</span>
+<span class="text-sm font-semibold text-forest-base">24°</span>
+</div>
+<div class="flex flex-col items-center gap-1.5">
+<span class="text-[10px] uppercase text-gray-400 font-bold">Qui</span>
+<span class="material-symbols-outlined text-amber text-xl">sunny</span>
+<span class="text-sm font-semibold text-forest-base">30°</span>
+</div>
+</div>
+</div>
+<div class="bg-white p-6 rounded-2xl shadow-card border border-gray-200">
+<h3 class="text-gray-400 text-xs font-bold uppercase tracking-widest mb-4">Ações Rápidas</h3>
+<div class="space-y-3">
+<button class="w-full flex items-center gap-3 p-3 rounded-xl bg-off-white hover:bg-sage/10 transition-all group border border-transparent hover:border-sage/20">
+<div class="size-10 rounded-lg bg-sage/20 flex items-center justify-center text-sage-dark group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">schedule_send</span>
+</div>
+<div class="text-left">
+<p class="text-sm font-bold text-forest-base">Agendar Aplicação</p>
+<p class="text-[11px] text-gray-400">Fungicida Talhão 04</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-gray-300 group-hover:text-sage-dark transition-colors">chevron_right</span>
+</button>
+<button class="w-full flex items-center gap-3 p-3 rounded-xl bg-off-white hover:bg-amber/10 transition-all group border border-transparent hover:border-amber/20">
+<div class="size-10 rounded-lg bg-amber/20 flex items-center justify-center text-amber-600 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[20px]">assignment</span>
+</div>
+<div class="text-left">
+<p class="text-sm font-bold text-forest-base">Relatório de Risco</p>
+<p class="text-[11px] text-gray-400">Exportar PDF</p>
+</div>
+<span class="material-symbols-outlined ml-auto text-gray-300 group-hover:text-amber-600 transition-colors">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between px-1">
+<h2 class="text-forest-base text-xl font-bold tracking-tight flex items-center gap-3">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-coral opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-coral"></span>
+</span>
+                    Alertas Recentes e Patógenos
+                </h2>
+<button class="text-sage text-sm font-bold hover:text-sage-dark transition-colors flex items-center gap-1 group">
+                    Ver todos <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white rounded-3xl overflow-hidden shadow-card border border-gray-200">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-off-white border-b border-gray-100">
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider">Status</th>
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider">Cultura</th>
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider">Patógeno / Doença</th>
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider">Probabilidade</th>
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider">Área Afetada</th>
+<th class="p-5 text-xs font-bold uppercase text-gray-400 tracking-wider text-right pr-8">Ação</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-gray-100 text-sm">
+<tr class="hover:bg-coral/5 transition-colors group">
+<td class="p-5">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-coral/10 border border-coral/20 text-coral text-[10px] font-bold uppercase tracking-wider">
+                                        Crítico
+                                    </span>
+</td>
+<td class="p-5 font-semibold text-forest-base">Soja <span class="text-gray-400 font-normal text-xs ml-1 italic">(Glicine max)</span></td>
+<td class="p-5 text-gray-600 font-medium">Phakopsora pachyrhizi (Ferrugem)</td>
+<td class="p-5">
+<div class="flex items-center gap-3">
+<div class="flex-1 h-2 bg-gray-100 rounded-full max-w-[100px] overflow-hidden">
+<div class="h-full bg-coral rounded-full shadow-sm" style="width: 85%"></div>
+</div>
+<span class="font-bold text-coral">85%</span>
+</div>
+</td>
+<td class="p-5 text-gray-600">Talhão 04 <span class="text-gray-400 ml-1">42 ha</span></td>
+<td class="p-5 text-right pr-8">
+<button class="text-forest-base hover:text-coral font-medium text-xs bg-white border border-gray-200 hover:border-coral/50 px-4 py-2 rounded-lg transition-all shadow-sm">Detalhes</button>
+</td>
+</tr>
+<tr class="hover:bg-amber/5 transition-colors group">
+<td class="p-5">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber/10 border border-amber/20 text-amber-600 text-[10px] font-bold uppercase tracking-wider">
+                                        Alerta
+                                    </span>
+</td>
+<td class="p-5 font-semibold text-forest-base">Milho <span class="text-gray-400 font-normal text-xs ml-1 italic">(Zea mays)</span></td>
+<td class="p-5 text-gray-600 font-medium">Exserohilum turcicum (Mancha)</td>
+<td class="p-5">
+<div class="flex items-center gap-3">
+<div class="flex-1 h-2 bg-gray-100 rounded-full max-w-[100px] overflow-hidden">
+<div class="h-full bg-amber rounded-full shadow-sm" style="width: 45%"></div>
+</div>
+<span class="font-bold text-amber-600">45%</span>
+</div>
+</td>
+<td class="p-5 text-gray-600">Talhão 12 <span class="text-gray-400 ml-1">115 ha</span></td>
+<td class="p-5 text-right pr-8">
+<button class="text-forest-base hover:text-amber-600 font-medium text-xs bg-white border border-gray-200 hover:border-amber/50 px-4 py-2 rounded-lg transition-all shadow-sm">Detalhes</button>
+</td>
+</tr>
+<tr class="hover:bg-sage/5 transition-colors group">
+<td class="p-5">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sage/10 border border-sage/20 text-sage-dark text-[10px] font-bold uppercase tracking-wider">
+                                        Normal
+                                    </span>
+</td>
+<td class="p-5 font-semibold text-forest-base">Soja <span class="text-gray-400 font-normal text-xs ml-1 italic">(Glicine max)</span></td>
+<td class="p-5 text-gray-600 font-medium">Cercospora kikuchii</td>
+<td class="p-5">
+<div class="flex items-center gap-3">
+<div class="flex-1 h-2 bg-gray-100 rounded-full max-w-[100px] overflow-hidden">
+<div class="h-full bg-sage rounded-full shadow-sm" style="width: 12%"></div>
+</div>
+<span class="font-bold text-sage-dark">12%</span>
+</div>
+</td>
+<td class="p-5 text-gray-600">Talhão 01 <span class="text-gray-400 ml-1">205 ha</span></td>
+<td class="p-5 text-right pr-8">
+<button class="text-forest-base hover:text-sage-dark font-medium text-xs bg-white border border-gray-200 hover:border-sage/50 px-4 py-2 rounded-lg transition-all shadow-sm">Detalhes</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+<footer class="p-8 border-t border-gray-200 text-center mt-8 bg-white">
+<p class="text-gray-400 text-xs font-semibold">© 2024 AgroWatch Intelligence Systems - Monitoramento Agrícola de Precisão</p>
+</footer>
+<div class="fixed bottom-8 right-8 z-50 group">
+<div class="absolute bottom-16 right-0 flex flex-col items-end gap-3 opacity-0 translate-y-4 pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300">
+<button class="flex items-center gap-3 glass-panel pl-4 pr-2 py-2 rounded-full shadow-md hover:bg-white text-forest-base text-sm font-semibold whitespace-nowrap border border-gray-200">
+                Nova Inspeção
+                <div class="bg-sage text-white p-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm font-bold">edit_document</span>
+</div>
+</button>
+<button class="flex items-center gap-3 glass-panel pl-4 pr-2 py-2 rounded-full shadow-md hover:bg-white text-forest-base text-sm font-semibold whitespace-nowrap border border-gray-200">
+                Reportar Problema
+                <div class="bg-coral text-white p-1.5 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-sm font-bold">bug_report</span>
+</div>
+</button>
+</div>
+<button class="size-14 rounded-full bg-sage text-white shadow-xl shadow-sage/30 flex items-center justify-center hover:scale-110 hover:bg-sage-dark transition-all duration-300">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-90 transition-transform duration-300">add</span>
+</button>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+jinja2
+requests
+python-multipart
+firebase-admin
+pandas
+pyserial
+websockets
+schedule
+openmeteo_requests
+requests_cache
+retry_requests

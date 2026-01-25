@@ -1,0 +1,740 @@
+[
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:38",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:40",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:42",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:44",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:46",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:48",
+        "temperatura": 26.6,
+        "umidade": 81.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:51",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:47:53",
+        "temperatura": 26.6,
+        "umidade": 81.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:48:54",
+        "temperatura": 26.6,
+        "umidade": 82.0,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:48:57",
+        "temperatura": 26.6,
+        "umidade": 81.9,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:48:59",
+        "temperatura": 26.6,
+        "umidade": 81.9,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:20",
+        "temperatura": 27.3,
+        "umidade": 79.9,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:20",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:22",
+        "temperatura": 27.3,
+        "umidade": 79.8,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:24",
+        "temperatura": 27.3,
+        "umidade": 79.8,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:26",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:28",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:30",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:32",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:34",
+        "temperatura": 27.3,
+        "umidade": 79.7,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:36",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:38",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:41",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:43",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:45",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:47",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:49",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:51",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:53",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:55",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:57",
+        "temperatura": 27.4,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:55:59",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:01",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:03",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:05",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:07",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:09",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:11",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:13",
+        "temperatura": 27.3,
+        "umidade": 79.6,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:15",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:17",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:19",
+        "temperatura": 27.4,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:21",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:23",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:26",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:27",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:29",
+        "temperatura": 27.3,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:31",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:34",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:36",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:38",
+        "temperatura": 27.3,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:40",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:42",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:44",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:46",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:48",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:50",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:52",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:54",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:56",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:56:58",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:00",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:02",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:04",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:06",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:08",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:10",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:12",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:14",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:16",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:18",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:20",
+        "temperatura": 27.4,
+        "umidade": 79.3,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:23",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:25",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:27",
+        "temperatura": 27.4,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:29",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:31",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:33",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:35",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:37",
+        "temperatura": 27.4,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:39",
+        "temperatura": 27.4,
+        "umidade": 79.5,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    },
+    {
+        "data": "2025-12-22",
+        "hora": "14:57:41",
+        "temperatura": 27.4,
+        "umidade": 79.4,
+        "lat": -27.588055,
+        "lon": -48.496029,
+        "conexao": "Bluetooth"
+    }
+]

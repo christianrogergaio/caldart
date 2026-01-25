@@ -1,0 +1,548 @@
+[
+    {
+        "data": "2025-06-04",
+        "hora": "23:40:18",
+        "temperatura": 22.5,
+        "umidade": 79.0
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:45:18",
+        "temperatura": 22.6,
+        "umidade": 79.0
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:50:18",
+        "temperatura": 22.6,
+        "umidade": 78.8
+    },
+    {
+        "data": "2025-06-04",
+        "hora": "23:55:19",
+        "temperatura": 22.7,
+        "umidade": 78.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:00:19",
+        "temperatura": 22.6,
+        "umidade": 79.0
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:05:20",
+        "temperatura": 22.6,
+        "umidade": 79.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:10:20",
+        "temperatura": 22.5,
+        "umidade": 79.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:15:21",
+        "temperatura": 22.5,
+        "umidade": 79.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:20:21",
+        "temperatura": 22.5,
+        "umidade": 79.4
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:25:22",
+        "temperatura": 22.5,
+        "umidade": 79.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:30:22",
+        "temperatura": 22.5,
+        "umidade": 79.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:35:23",
+        "temperatura": 22.5,
+        "umidade": 79.4
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:40:23",
+        "temperatura": 22.5,
+        "umidade": 79.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:45:23",
+        "temperatura": 22.5,
+        "umidade": 79.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:50:24",
+        "temperatura": 22.5,
+        "umidade": 79.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "00:55:24",
+        "temperatura": 22.5,
+        "umidade": 79.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:00:25",
+        "temperatura": 22.4,
+        "umidade": 79.4
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:05:25",
+        "temperatura": 22.5,
+        "umidade": 79.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:10:26",
+        "temperatura": 22.4,
+        "umidade": 79.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:15:26",
+        "temperatura": 22.4,
+        "umidade": 79.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:20:27",
+        "temperatura": 22.4,
+        "umidade": 79.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:25:27",
+        "temperatura": 22.4,
+        "umidade": 79.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:30:28",
+        "temperatura": 22.4,
+        "umidade": 79.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:35:28",
+        "temperatura": 22.4,
+        "umidade": 79.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:40:28",
+        "temperatura": 22.4,
+        "umidade": 79.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:45:29",
+        "temperatura": 22.4,
+        "umidade": 79.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:50:29",
+        "temperatura": 22.4,
+        "umidade": 79.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "01:55:30",
+        "temperatura": 22.4,
+        "umidade": 79.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:00:30",
+        "temperatura": 22.4,
+        "umidade": 80.0
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:05:31",
+        "temperatura": 22.4,
+        "umidade": 80.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:10:31",
+        "temperatura": 22.4,
+        "umidade": 80.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:15:32",
+        "temperatura": 22.4,
+        "umidade": 80.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:20:32",
+        "temperatura": 22.4,
+        "umidade": 79.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:25:33",
+        "temperatura": 22.4,
+        "umidade": 80.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:30:33",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:35:33",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:40:34",
+        "temperatura": 22.4,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:45:34",
+        "temperatura": 22.4,
+        "umidade": 81.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:50:35",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "02:55:35",
+        "temperatura": 22.4,
+        "umidade": 80.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:00:36",
+        "temperatura": 22.4,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:05:36",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:10:37",
+        "temperatura": 22.4,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:15:37",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:20:38",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:25:38",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:30:38",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:35:39",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:40:39",
+        "temperatura": 22.4,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:45:40",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:50:40",
+        "temperatura": 22.4,
+        "umidade": 80.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "03:55:41",
+        "temperatura": 22.4,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:00:41",
+        "temperatura": 22.5,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:05:42",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:10:42",
+        "temperatura": 22.5,
+        "umidade": 80.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:15:43",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:20:43",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:25:43",
+        "temperatura": 22.4,
+        "umidade": 80.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:30:44",
+        "temperatura": 22.4,
+        "umidade": 80.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:35:44",
+        "temperatura": 22.4,
+        "umidade": 80.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:40:45",
+        "temperatura": 22.5,
+        "umidade": 80.9
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:45:45",
+        "temperatura": 22.5,
+        "umidade": 81.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:50:46",
+        "temperatura": 22.4,
+        "umidade": 81.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "04:55:46",
+        "temperatura": 22.4,
+        "umidade": 81.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:00:47",
+        "temperatura": 22.4,
+        "umidade": 81.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:05:47",
+        "temperatura": 22.4,
+        "umidade": 81.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:10:48",
+        "temperatura": 22.4,
+        "umidade": 81.1
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:15:48",
+        "temperatura": 22.4,
+        "umidade": 81.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:20:48",
+        "temperatura": 22.4,
+        "umidade": 81.2
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:25:49",
+        "temperatura": 22.4,
+        "umidade": 81.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:30:49",
+        "temperatura": 22.4,
+        "umidade": 81.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:35:50",
+        "temperatura": 22.4,
+        "umidade": 81.3
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:40:50",
+        "temperatura": 22.4,
+        "umidade": 81.4
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:45:51",
+        "temperatura": 22.4,
+        "umidade": 81.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:50:51",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "05:55:52",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:00:52",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:05:53",
+        "temperatura": 22.4,
+        "umidade": 81.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:10:53",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:15:53",
+        "temperatura": 22.4,
+        "umidade": 81.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:20:54",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:25:54",
+        "temperatura": 22.4,
+        "umidade": 81.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:30:55",
+        "temperatura": 22.4,
+        "umidade": 81.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:35:55",
+        "temperatura": 22.4,
+        "umidade": 81.8
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:40:56",
+        "temperatura": 22.4,
+        "umidade": 81.7
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:45:56",
+        "temperatura": 22.4,
+        "umidade": 81.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:50:57",
+        "temperatura": 22.4,
+        "umidade": 81.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "06:55:57",
+        "temperatura": 22.4,
+        "umidade": 81.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "07:00:58",
+        "temperatura": 22.4,
+        "umidade": 81.5
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "07:05:58",
+        "temperatura": 22.4,
+        "umidade": 81.6
+    },
+    {
+        "data": "2025-06-05",
+        "hora": "07:10:58",
+        "temperatura": 22.4,
+        "umidade": 81.4
+    }
+]
