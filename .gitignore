@@ -42,3 +42,6 @@ coverage.xml
 *.cover
 *.log
 .pytest_cache/
+
+# Secrets
+config/evcr-monitor-firebase-key.json
