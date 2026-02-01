@@ -1,4 +1,5 @@
 #include <WiFi.h>
+#include <WiFiClientSecure.h>
 #include <HTTPClient.h>
 #include <BluetoothSerial.h>
 
@@ -12,7 +13,7 @@ String deviceName = "HC-05";
 uint8_t address[6] = {0x58, 0x56, 0x00, 0x00, 0xD0, 0x55}; // MAC ENCONTRADO
 
 // --- SERVIDOR ---
-const char* serverUrl = "http://192.168.0.18:8000/api/readings";
+const char* serverUrl = "https://vinicolacaldart.onrender.com/api/readings";
 
 BluetoothSerial SerialBT;
 
@@ -106,7 +107,8 @@ void processaLinha(String linha) {
 
 void enviarParaNuvem(float t, float h) {
   if (WiFi.status() == WL_CONNECTED) {
-    WiFiClient client;
+    WiFiClientSecure client;
+    client.setInsecure(); // Ignora verificação de certificado SSL (necessário para HTTPS sem CA root)
     HTTPClient http;
     http.begin(client, serverUrl);
     http.addHeader("Content-Type", "application/json");
