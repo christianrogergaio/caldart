@@ -48,6 +48,12 @@ def main():
                 time.sleep(2)
                 logging.info(f"Connected to Arduino on {SERIAL_PORT}")
                 print(f"\nConectado com sucesso na porta {SERIAL_PORT}!\n")
+                
+                # --- AUTO-SYNC (Offline Mode) ---
+                print("   [SYNC] Solicitando dados offline...")
+                time.sleep(2) # Espera estabilizar
+                arduino.write(b"SYNC\n")
+                # -------------------------------
 
             if arduino.in_waiting > 0:
                 line = arduino.readline().decode('utf-8', errors='ignore').strip()

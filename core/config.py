@@ -2,13 +2,13 @@ import os
 
 # Caminhos
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CREDENCIAIS_FIREBASE = os.path.join(BASE_DIR, "config", "evcr-monitor-firebase-key.json")
+CREDENCIAIS_FIREBASE = os.getenv("FIREBASE_CREDENTIALS_PATH", os.path.join(BASE_DIR, "config", "evcr-monitor-firebase-key.json"))
 PASTA_DADOS = os.path.join(BASE_DIR, 'dados')
 ARQUIVO_HISTORICO_CSV = os.path.join(PASTA_DADOS, "historico_avaliacoes.csv")
 
 # Arduino / Serial
 # Arduino / Serial
-PORTA_SERIAL = 'COM4'
+PORTA_SERIAL = 'COM3'
 BAUD_RATE = 9600
 INTERVALO_LEITURA = 1  # Segundos entre leituras
 

@@ -3,15 +3,16 @@
 #include <BluetoothSerial.h>
 
 // --- CONFIGURAÇÃO DE REDE (WIFI) ---
-const char* ssid = "VALQUIRIA_5G";      // <--- EDITAR
+const char* ssid = "VALQUIRIA_2G";      // <--- EDITAR
 const char* password = "sergio-gio"; // <--- EDITAR
 
 // --- CONFIGURAÇÃO DE ALVO (BLUETOOTH DO ARDUINO) ---
-String deviceName = "HC-05"; // Nome do módulo Bluetooth do Arduino
-// uint8_t address[6] = {0x00, 0x10, 0x00, 0x00, 0x00, 0x00}; // Se precisar conectar por MAC
+// --- CONFIGURAÇÃO DE ALVO (BLUETOOTH DO ARDUINO) ---
+String deviceName = "HC-05"; 
+uint8_t address[6] = {0x58, 0x56, 0x00, 0x00, 0xD0, 0x55}; // MAC ENCONTRADO
 
 // --- SERVIDOR ---
-const char* serverUrl = "http://192.168.0.9:8000/api/readings";
+const char* serverUrl = "http://192.168.0.18:8000/api/readings";
 
 BluetoothSerial SerialBT;
 
@@ -29,11 +30,11 @@ void setup() {
 
   // 2. Inicia Bluetooth em modo MASTER (true)
   SerialBT.begin("ESP32_Bridge", true); 
-  Serial.println("Bluetooth iniciado. Tentando conectar ao HC-05...");
+  SerialBT.setPin("1234", 4);
+  Serial.println("Bluetooth iniciado. Tentando conectar ao HC-05 (MAC)...");
 
-  // Tenta conectar (pode demorar um pouco)
-  // O connect(name) retorna true se sucesso
-  bool connected = SerialBT.connect(deviceName);
+  // Tenta conectar usando o ENDEREÇO MAC (Muito mais confiável que por nome)
+  bool connected = SerialBT.connect(address);
   
   if(connected) {
     Serial.println("Conectado ao HC-05 com sucesso!");
@@ -50,7 +51,7 @@ void loop() {
   // Se perdeu conexão Bluetooth, tenta reconectar (simples)
   if (!SerialBT.connected(1000)) {
      Serial.println("Bluetooth desconectado! Tentando reconectar...");
-     if (SerialBT.connect(deviceName)) {
+     if (SerialBT.connect(address)) {
         Serial.println("Reconectado!");
      }
   }

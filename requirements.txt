@@ -11,3 +11,5 @@ schedule
 openmeteo_requests
 requests_cache
 retry_requests
+
+gunicorn
